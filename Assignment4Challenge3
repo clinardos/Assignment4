@@ -3,7 +3,7 @@
 // Assignment 4, Challenge 3
 
 let colors = [
-  "powderblue", "lightblue","lightskyblue","deepskyblue","skyblue","lightsteelblue","steelblue","dodgerblue","cornflakeblue","royalblue","blue","mediumblue","darkblue","navy","midnightblue","mediumslateblue","slateblue","darkslateblue"
+  "peachpuff", "olivedrab","yellowgreen","hotpink","khaki","rebeccapurple","wheat","aquamarine","cornflakeblue","royalblue","blue","mediumblue","darkblue","navy","midnightblue","mediumslateblue","slateblue","darkslateblue"
 ];
 
 let randomColors1;
