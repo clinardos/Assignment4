@@ -22,6 +22,10 @@ This is Assignment 4 I created in NMD 105 spring 23' will be updated as assignme
 
 <br> For the last part of the challenge, I simply added 4 sunflowers with different parameters to the draw() function. This allowed me to create what seemed like 4 different shapes. 
 
+
+You can make a pattern that looks like this: 
+<img width="500" alt="Screenshot 2023-04-05 at 1 48 17 PM" src="https://user-images.githubusercontent.com/124199359/230163498-4d5008b3-4a85-4d10-94cd-d6dde5575bdf.png">
+
 ## assignment-4-challenge-2
 ### [Link](https://editor.p5js.org/clinardos/full/vqGYkEldi)
 <p> The task of this assignmnet was to create a two-dimensional pattern by repeating a combination of shapes horizontally and vertically. To do this you must use loops within the draw() function to repeat tiles of shapes in horizontal and vertical directions. The tile should consist of multiple different sprite that have different parameters. 
@@ -39,6 +43,12 @@ This is Assignment 4 I created in NMD 105 spring 23' will be updated as assignme
 ```
 
 I added all of the variables used in each SunFlower so the program could be read properly. There were a total of 10 sunflowers. Then I just played around with arrangement until it looked like a piece of fabric. 
+
+
+You can make a pattern that looks like this:
+<img width="929" alt="Screenshot 2023-04-05 at 1 48 42 PM" src="https://user-images.githubusercontent.com/124199359/230163644-a3eb5b5f-809a-466d-bf5f-9b0226d07054.png">
+
+
 
 ## assignment-4-challenge-3
 ### [Link](https://editor.p5js.org/clinardos/full/XEJGfXZru)
@@ -58,3 +68,9 @@ function setup() {
   ```
   
   Then I just called each random color in the fill funciton of the corresponding flower. 
+  
+  You can make a pattern that looks like this (each time played a new pattern will appear):
+  
+  <img width="498" alt="Screenshot 2023-04-05 at 1 49 17 PM" src="https://user-images.githubusercontent.com/124199359/230163802-5a0a3b8f-2c3a-4b30-8c1a-ee783724c9a1.png">
+
+  
