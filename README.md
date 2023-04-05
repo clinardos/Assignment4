@@ -1,8 +1,5 @@
-# Assignment4
-This is Assignment 4 I created in NMD 105 spring 23' will be updated as assignment nears completion 
-
 # assignment-4-clinardos
-
+This is Assignment 4 I created in NMD 105 spring 23' will be updated as assignment nears completion 
 
 ## assignment-4-challenge-1
 ### [Link](https://editor.p5js.org/clinardos/full/nzgWYu7yz)
