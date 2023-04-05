@@ -1,0 +1,162 @@
+
+// Linardos, Caitlin
+// Assignment 4, Challenge 3
+
+let colors = [
+  "powderblue", "lightblue","lightskyblue","deepskyblue","skyblue","lightsteelblue","steelblue","dodgerblue","cornflakeblue","royalblue","blue","mediumblue","darkblue","navy","midnightblue","mediumslateblue","slateblue","darkslateblue"
+];
+
+let randomColors1;
+let randomColors2;
+let randomColors3;
+let randomColors4;
+let randomInterval1;
+let randomInterval2;
+let randomInterval3;
+let randomInterval4;
+
+function setup() {
+  createCanvas(400, 400);
+  // Establishing variables to randomize color
+  randomColors1 = random(colors);
+  randomColors2 = random(colors);
+  randomColors3 = random(colors);
+  randomColors4 = random(colors);
+  
+// Establishing variables to randomize position
+randomInterval1 = random(90);
+randomInterval2 = random(90);
+randomInterval3 = random(90);
+randomInterval4 = random(90);
+  angleMode(DEGREES);
+  noLoop();
+}
+
+function draw() {
+  background("lavender");
+  // Nested loops to create grid
+  for (let column = 0; column < 7; column++) {
+    for (let row = 0; row < 7; row++) {
+      let flowerX = row * 100;
+      let flowerY =  column * 100;
+      // Adding Flower 1
+      addSunFlower(flowerX - randomInterval1, flowerY - randomInterval1, 0.5);
+     //Adding Flower Three
+      addFlowerThree(flowerX - randomInterval3, flowerY + randomInterval3, 0.5);
+      // Adding Flower Two
+ addFlowerTwo(flowerX + randomInterval2, flowerY + randomInterval2, 0.5);
+      // Adding Flower Four
+      addFlowerFour(flowerX + randomInterval4, flowerY - randomInterval4, 0.5);
+    }
+  }
+}
+// This is for the first flower
+function addSunFlower(x, y, size) {
+  push();
+  // allows flower to be moved
+  translate(x, y);
+  // Controls size of flower
+  scale(size);
+
+  // This fills the color based on each flower parameters
+  fill(randomColors1);
+
+  //This creates the petals
+  for (let petalsAdded = 0; petalsAdded < 106; petalsAdded++) {
+    ellipse(0, 41, 7, 45);
+    rotate(310);
+  }
+  push();
+  noStroke();
+
+  // Bulb of the flower
+  fill(randomColors4);
+  ellipse(0, 0, 40);
+  pop();
+  pop();
+}
+// This is for the second flower
+function addFlowerTwo(x, y, size) {
+  push();
+  // allows flower to be moved
+  translate(x, y);
+  // Controls size of flower
+  scale(size);
+
+  // This fills the color based on each flower parameters
+  fill(randomColors2);
+
+  //This creates the petals
+  for (let petalsAdded = 0; petalsAdded < 11; petalsAdded++) {
+    ellipse(0, 22, 20, 45);
+    rotate(98);
+  }
+  push();
+  noStroke();
+
+  // Bulb of the flower
+  fill(randomColors3);
+  ellipse(0, 0, 30);
+  pop();
+  pop();
+}
+// This is for the third flower
+function addFlowerThree(x, y, size) {
+  push();
+  // allows flower to be moved
+  translate(x, y);
+  // Controls size of flower
+  scale(size);
+
+  // This fills the color based on each flower parameters
+  fill(randomColors3);
+
+  //This creates the petals
+  for (let petalsAdded = 0; petalsAdded < 140; petalsAdded++) {
+    ellipse(0, 52, 7, 55);
+    ellipse(0, 42, 7, 45);
+    ellipse(0, 32, 7, 35);
+    ellipse(0, 22, 7, 25);
+    ellipse(0, 12, 7, 15);
+    ellipse(0, 2, 7, 5);
+    rotate(11);
+  }
+  push();
+  noStroke();
+
+  // Bulb of the flower
+  fill(randomColors2);
+  ellipse(0, 0, 40);
+  pop();
+  pop();
+}
+// This is for the forth flower
+function addFlowerFour(x, y, size) {
+  push();
+  // allows flower to be moved
+  translate(x, y);
+  // Controls size of flower
+  scale(size);
+
+  // This fills the color based on each flower parameters
+  fill(randomColors4);
+
+  //This creates the petals
+  for (let petalsAdded = 0; petalsAdded < 20; petalsAdded++) {
+    arc(0, 30, 25, 26, 0, 160);
+    arc(0, 25, 23, 26, 0, 160);
+    arc(0, 20, 20, 26, 0, 160);
+    arc(0, 15, 18, 26, 0, 110);
+    arc(0, 10, 16, 26, 0, 110);
+    arc(0, 6.5, 14, 26, 0, 160);
+    rotate(205);
+  }
+  push();
+  noStroke();
+
+  // Bulb of the flower
+  fill(randomColors1);
+  ellipse(0, 0, 18);
+  pop();
+  pop();
+}
